@@ -1,0 +1,11 @@
+build/
+bin/
+.cache/
+.vscode/
+
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.log
