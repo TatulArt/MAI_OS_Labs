@@ -64,8 +64,8 @@ int main(int argc, char *argv[]) {
 
         char output[MAX_LEN * 2];
         int output_len = snprintf(output, sizeof(output),
-                                 "[Server PID=%d] Исходная: '%s' -> Развернутая: '%s'\n",
-                                 my_pid, original, buffer);
+                                 "[Server PID=%d] '%s'\n",
+                                 my_pid, buffer);
 
         if (write(fd, output, output_len) == -1) {
             perror("Ошибка записи в файл");
